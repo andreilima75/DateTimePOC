@@ -34,5 +34,8 @@ public class DateTimePOC {
 
         System.out.println("Period (days/months): " + period);
         System.out.println("Duration (hours): " + duration.toHours() + " hours");
+
+        Instant instant = Instant.now();
+        System.out.println("Instant (UTC): " + instant);
     }
 }
