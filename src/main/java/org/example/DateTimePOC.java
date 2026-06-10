@@ -28,5 +28,11 @@ public class DateTimePOC {
         System.out.println("Tomorrow: " + tomorrow);
         System.out.println("Next Month: " + nextMonth);
         System.out.println("First day of next month: " + firstDayNextMonth);
+
+        Period period = Period.between(today, nextMonth);
+        Duration duration = Duration.between(now, now.plusHours(5));
+
+        System.out.println("Period (days/months): " + period);
+        System.out.println("Duration (hours): " + duration.toHours() + " hours");
     }
 }
